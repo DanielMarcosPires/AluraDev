@@ -1,0 +1,28 @@
+.material-symbols-outlined::after{
+    content: 'menu';
+    display: none;
+    padding: 5px;
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    margin: 0.5em
+}
+form .icon-search::after{
+    content: 'search';
+    display: none;
+}
+@media screen and (max-width:850px){
+    #show-menu::after{
+        content: 'menu';
+        display: block;
+        user-select: none;
+        cursor: pointer;
+        color: white;
+        margin: 0.5em
+    }
+    .material-symbols-outlined:hover:after{
+        background: var(--trs);
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
